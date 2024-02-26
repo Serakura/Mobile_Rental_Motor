@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotorActivity"
+    android:background="@color/gold">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/text_notifications"
+        android:weightSum="1"
+        android:background="@color/dark"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/btn_kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Detail Motor"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/text_notifications">
+
+        <ImageView
+            android:id="@+id/motor_gambar"
+            android:layout_width="187dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ves" />
+
+        <TextView
+            android:id="@+id/motor_merk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:text="Merek Motor"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_motor"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/motor_nopol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_nopol"
+            android:drawablePadding="10dp"
+            android:text="Nomor Motor"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/motor_warna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_warna"
+            android:drawablePadding="10dp"
+            android:text="Warna"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/motor_thn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_kalender"
+            android:drawablePadding="10dp"
+            android:text="Tahun Pembuatan"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/motor_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_wishlist"
+            android:drawablePadding="10dp"
+            android:text="Jenis Motor"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Biaya (hari)"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/motor_tarif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:padding="8dp"
+            android:background="@drawable/border_textview"
+            android:drawableLeft="@drawable/ic_harga"
+            android:drawablePadding="10dp"
+            android:text="Biaya"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_booking"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_radius"
+        android:backgroundTint="@color/dark"
+        android:textColor="@color/white"
+        android:text="Booking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
